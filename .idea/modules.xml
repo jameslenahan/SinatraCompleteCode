@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SinatraCompleteCode.iml" filepath="$PROJECT_DIR$/.idea/SinatraCompleteCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SinatraBeerCounter.iml" filepath="$PROJECT_DIR$/.idea/SinatraBeerCounter.iml" />
     </modules>
   </component>
 </project>

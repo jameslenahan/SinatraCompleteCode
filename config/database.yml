@@ -8,3 +8,7 @@ development:
 test:
   <<: *default
   database: 'db/test.sqlite'
+
+create_user:
+  <<: *default
+  database: 'create_user'

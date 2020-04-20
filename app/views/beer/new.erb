@@ -1,0 +1,36 @@
+
+<h1>Add to your Beer list</h1>
+
+<div class="view">
+  <form action="/beer" method="post">
+    <label>Beer List Item:</label>
+    <input type="text" name="beer[name]">
+    <br></br>
+
+    <label>Category of Beer:</label>
+    <input type="text" name="beer[category]">
+    <br></br>
+
+    <label>ABV of Beer:</label>
+    <input type="text" name="beer[abv]">
+    <br></br>
+
+    <% if Beer.all.size > 0 %>
+      <label>Choose category:</label>
+      <% Category.all.each do |beer| %>
+        <label><%=beer.name%></label>
+        <input type="radio" name="beer[beer_id]" id="<%=beer.id%>" value="<%=beer.id%>"></input>
+      <%end%>
+      <br></br>Beer List Item
+      OR
+    <% end %>
+
+    <label>Add a new category:</label>
+    <input type="text" name="beer[category]"></input>
+    <br></br>
+
+    <div class="button_holder">
+      <input type="submit" value="Add to Beer List">
+    </div>
+  </form>
+</div>

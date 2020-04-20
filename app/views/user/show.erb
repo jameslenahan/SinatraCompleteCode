@@ -1,0 +1,11 @@
+<h1><%=current_user.username%>'s Beer List</h1>
+
+<div class="view">
+
+  <ol>
+    <% current_user.beers.each do |beer| %>
+      <li><a href="/beer/<%=beer.id%>"><%=beer.name%></a></li>
+    <% end %>
+  </ol>
+
+</div>

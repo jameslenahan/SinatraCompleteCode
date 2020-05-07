@@ -1,0 +1,23 @@
+
+<div class="view">
+
+  <h3>Name: <%= @beer.name%></h3>
+  <h3>Category: <%= @beer.category %></h3>
+  <h3>ABV: <%= @beer.abv %></h3>
+
+  <% if current_user %>
+    <% if @beer.user_id == current_user.id %>
+
+      <div class="btn-group" role="group">
+        <button><a href="/beer/<%=@beer.id%>/edit">Edit</a></button>
+
+        <form action="/beer/<%=@beer.id%>/delete" method="post">
+          <input id="hidden" type="hidden" name="_method" value="delete">
+          <input class="button_holder" type="submit" value="Delete">
+        </form>
+      </div>
+
+    <% end %>
+  <% end %>
+
+</div>

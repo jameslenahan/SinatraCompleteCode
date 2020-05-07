@@ -1,52 +1,6 @@
-<h1><%= @beer.name %></h1>
-
-<div class="view">
-
-  <h3>Description: <%= @beer.name %></h3>
-  <h3>Location: <%= @beer.category %></h3>
-  <h3>Category: <%= @beer.abv %></h3>
-
-  <% if current_user %>
-    <% if @beer.user_id == current_user.id %>
-
-      <div class="btn-group" role="group">
-        <button><a href="/items/<%=@beer.id%>/edit">Edit</a></button>
-
-        <form action="/items/<%=@beer.id%>/delete" method="post">
-          <input id="hidden" type="hidden" name="_method" value="delete">
-          <input class="button_holder" type="submit" value="Delete">
-        </form>
-      </div>
-
-    <% end %>
-  <% end %>
-
-</div>
-
-
-    if params[:beer][:name] == "" || params[:beer][:category] == "" || params[:beer][:abv] == ""
-      redirect to 'beer/new'
-    end
-
-        if !params[:category][:name].empty?
-          @category = Category.find_or_create_by(name: params[:category][:name])
-          @beer.category_id = @category.id
-          @beer.save
-        end
-
-          patch '/beer/:id' do
-            if params[:beer][:name] == "" || params[:beer][:category] == "" || params[:beer][:abv] == ""
-              redirect to "/beer/#{params[:id]}/edit"
-            else
-              @beer = Beer.find_by_id(params[:id])
-              @beer.update(params[:beer])
-
-              if !params[:category][:name].empty?
-                @category = Category.find_or_create_by(name: params[:category][:name])
-                @beer.category_id == @category.id
-                @beer.save
-              end
-
-              redirect to "/beer/#{@beer.id}"
-            end
-          end
+  <label>Category:</label>
+  <% Category.all.each do |category| %>
+    <label><%=category.name%></label>
+    <input type="radio" name="beer[category_id]" id="<%=category.id%>" value="<%=category.id%>" <%='checked' if @beer.category_id == category.id %>></input>
+  <%end%>
+  <br>

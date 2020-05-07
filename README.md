@@ -1,44 +1,15 @@
-# SinatraCompleteCode
+Do you ever find yourself ordering a new beer at a bar, and not know where to keep track of it?
+Well, that's why I've created this nifty Beer Tracker web app!
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/SinatraCompleteCode`. To experiment with that code, run `bin/console` for an interactive prompt.
+With this you can create a unique account and create, read, update, and delete as many beers as you'd like!
 
-TODO: Delete this and the text above, and describe your gem
+To get started:
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'SinatraCompleteCode'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install SinatraCompleteCode
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/SinatraCompleteCode. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/SinatraCompleteCode/blob/master/CODE_OF_CONDUCT.md).
-
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the SinatraCompleteCode project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/SinatraCompleteCode/blob/master/CODE_OF_CONDUCT.md).
+Go to https://github.com/jameslenahan/SinatraCompleteCode
+Click the 'Clone or Download' button
+Copy the link
+In Command Line or Git Bash, type 'git clone ' then paste the URL
+Run 'bundle install'
+Type 'rake db:migrate'
+Run 'shotgun'
+Open the URL in a browser and run the application

@@ -1,0 +1,13 @@
+class ReviewsController < ApplicationController
+  get "/beer/:id/reviews/new" do
+    @beer = Beer.where(:user_id => current_user.id).build(params[:beer])
+    erb :'/beer/review'
+  end
+  post '/reviews' do
+    @review = Review.where(:user_id => current_user.id).build(params[:review])
+    @review.content = @review
+    @review.save
+    erb :'beer/show_review'
+  end
+
+end

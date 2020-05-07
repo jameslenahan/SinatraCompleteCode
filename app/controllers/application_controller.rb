@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
 
   get '/' do
     if logged_in?
-      redirect '/account'
+      redirect '/show'
     end
     @beers = Beer.all
       erb :index

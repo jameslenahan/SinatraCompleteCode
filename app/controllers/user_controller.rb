@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     end
   end
 
-  get '/account' do
+  get '/show' do
     erb :'user/show'
   end
 

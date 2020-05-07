@@ -14,6 +14,7 @@ gem "tux"
 gem 'rack-flash3'
 gem 'eventmachine'
 gem 'nokogiri'
+gem 'rails'
 
 group :test do
   gem 'rspec'

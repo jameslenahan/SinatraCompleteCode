@@ -1,29 +1,29 @@
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background: #4ADBD8; /* For browsers that do not support gradients */
-    background: -webkit-gradient(linear, left top, left bottom, from(#4ADBC8), to(#293f50));
-    background: -o-linear-gradient(#4ADBC8, #293f50); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#4ADBC8, #293f50); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#4ADBC8, #293f50); /* Standard syntax */
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-gradient(linear, left top, left bottom, from(red), to(#293f50));
+    background: -o-linear-gradient(red, #293f50); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, #293f50); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, #293f50); /* Standard syntax */
     background-repeat: no-repeat;
     min-height: 700px;
 }
 
 h1, body a {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Arial', cursive;
     text-align: center;
     color: white;
 }
 
 form input {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Arial, cursive;
 }
 
 h2, form label {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Arial', cursive;
     color: black;
 }
 
@@ -31,7 +31,7 @@ div.view {
     border: solid black 2px;
     background-color: white;
     padding: 10px;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Arial', cursive;
     min-height: 400px;
 }
 

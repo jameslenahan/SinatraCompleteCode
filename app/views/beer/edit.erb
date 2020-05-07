@@ -7,20 +7,20 @@
   <input type="text" name="name" value="<%= @beer.name %>"> </br>
 
   <label>Description </label>
-  <input type="text" name="description" value="<%= @beer.category %>"> </br>
+  <input type="text" name="description" value="<%= @beer.description %>"> </br>
 
-  <label>Location</label>
-  <input type="text" name="location" value="<%= @beer.abv %>"> </br>
+  <label>ABV</label>
+  <input type="text" name="abv" value="<%= @beer.abv %>"> </br>
 
   <label>Category:</label>
   <% Category.all.each do |category| %>
     <label><%=category.name%></label>
-    <input type="radio" name="beer[category_id]" id="<%=category.id%>" value="<%=category.id%>" <%='checked' if @beer.category_id == category.id %>></input>
+    <input type="radio" name="beer[category_id]" id="<%=category.id%>" value="<%=category.id%>" <%='checked' if @beer.category_id == category.id %>>
   <%end%>
-  <br></br>
+  <br>
 
   <label>Or add new category:</label>
-  <input type="text" name="category[name]"></input>
+  <input type="text" name="category[name]"</input>
 
   <input type="submit" value="Update">
 </form>
